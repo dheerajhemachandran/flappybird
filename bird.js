@@ -6,7 +6,9 @@ let timeSinceLastJump = Number.POSITIVE_INFINITY
 export function setupBird() {
   setTop(window.innerHeight / 2)
   document.removeEventListener("keydown", handleJump)
+  document.removeEventListener("tounchstart", handleJump)
   document.addEventListener("keydown", handleJump)
+  document.addEventListener("touchstart", handleJump)
 }
 
 export function updateBird(delta) {
