@@ -7,8 +7,8 @@ import {
 } from "./pipe.js"
 
 document.addEventListener("keypress", handleStart, { once: true })
+document.addEventListener("touchstart", handleStart, { once: true })
 
-document.addEventListener("touchend", handleStart, { once: true })
 const title = document.querySelector("[data-title]")
 const subtitle = document.querySelector("[data-subtitle]")
 
